@@ -1,0 +1,17 @@
+/**
+ * sifre
+ */
+import java.lang.reflect.Array;
+import java.util.Random;
+public class sifre {
+
+    public static void main(String[] args) {
+        String temp="";
+        Random rand=new Random();
+        String list="ABCDEFGHIJKLMNOPRSTUVYZ1234567890!+%&/()=?_-*";                  
+            for(int i=0;i<16;i++){
+                temp=temp+list.charAt(rand.nextInt(list.length()));
+            }
+        System.out.println("Yeni Şifreniz: "+temp);
+    }
+}
